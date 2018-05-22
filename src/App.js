@@ -5,8 +5,9 @@ import NavbarFeatures from './NavbarFeatures.js';
 class App extends Component {
   render() {
     return (
-      
+      <div>
      <NavbarFeatures />
+     </div>
     );
   }
 }
