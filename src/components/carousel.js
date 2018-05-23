@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { Carousel, CarouselCaption, CarouselControl, CarouselInner, CarouselItem, CarouselIndicators, CarouselIndicator, View, Mask, Container } from 'mdbreact';
+import { Carousel, CarouselCaption, CarouselControl, CarouselInner, CarouselItem, CarouselIndicators, CarouselIndicator, View, Mask } from 'mdbreact';
 import './carousel.css';
 
 export default class CarouselPage extends Component {
@@ -42,17 +42,18 @@ export default class CarouselPage extends Component {
 
   render(){
     const { activeItem } = this.state;
+  
     return(
-        <div className="style">
+      <div className="style">
         <Carousel
           activeItem={this.state.activeItem}
           next={this.next}
           className="z-depth-1">
           <CarouselInner>
             <CarouselItem itemId="1">
-              <View className="slidesty">
-                <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" />
-                <Mask overlay="black-light"></Mask>
+              <View >
+                <img className="d-block w-100" src="http://www.backgroundimageshd.com/wp-content/uploads/2017/12/City-Full-HD-Wallpaper-1920x108023.jpg" alt="First slide" />
+                
               </View>
               <CarouselCaption>
                 <h3 className="h3-responsive">Light mask</h3>
@@ -60,9 +61,8 @@ export default class CarouselPage extends Component {
               </CarouselCaption>
             </CarouselItem>
             <CarouselItem itemId="2">
-              <View className="slidesty">
-                <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(99).jpg" alt="Second slide" />
-                <Mask overlay="black-strong"></Mask>
+              <View >
+                <img className="d-block w-100" src="http://www.backgroundimageshd.com/wp-content/uploads/2017/12/boal-wallpaper-1920x1080222.jpg" alt="Second slide" />
               </View>
               <CarouselCaption>
                 <h3 className="h3-responsive">Strong mask</h3>
@@ -70,9 +70,8 @@ export default class CarouselPage extends Component {
               </CarouselCaption>
             </CarouselItem>
             <CarouselItem itemId="3">
-              <View className="slidesty">
-                <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg" alt="Third slide" />
-                <Mask overlay="black-slight"></Mask>
+              <View >
+                <img className="d-block w-100" src="http://www.backgroundimageshd.com/wp-content/uploads/2017/12/Black-Wallpapers-HD-1920x108020.jpg" alt="Third slide" />
               </View>
               <CarouselCaption>
                 <h3 className="h3-responsive">Slight mask</h3>
@@ -80,9 +79,8 @@ export default class CarouselPage extends Component {
               </CarouselCaption>
             </CarouselItem>
             <CarouselItem itemId="4">
-              <View className="slidesty">
-                <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20%28143%29.jpg" alt="Mattonit's item" />
-                <Mask overlay="black-light"></Mask>
+              <View >
+                <img className="d-block w-100" src="http://www.backgroundimageshd.com/wp-content/uploads/2017/12/1920x1080-Wallpaper15.jpg" alt="Mattonit's item" />
               </View>
               <CarouselCaption>
                 <h3 className="h3-responsive">Sopot Beach</h3>
@@ -100,7 +98,8 @@ export default class CarouselPage extends Component {
           </CarouselIndicators>
 
         </Carousel>
-      </div>
+       </div>
+      
     );
   }
 }
