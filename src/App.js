@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './components/Navbars.js';
+import Navbar from './components/Navbars';
 import CarouselPage from './components/carousel';
 import { BrowserRouter as Router } from 'react-router-dom';
 
