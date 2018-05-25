@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import { Carousel, CarouselCaption, CarouselControl, CarouselInner, CarouselItem, CarouselIndicators, CarouselIndicator, View, Mask } from 'mdbreact';
+import { Button, Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
 import './carousel.css';
 
 export default class CarouselPage extends Component {
@@ -42,7 +43,7 @@ export default class CarouselPage extends Component {
 
   render(){
     const { activeItem } = this.state;
-  
+
     return(
       <div className="style">
         <Carousel
@@ -53,7 +54,7 @@ export default class CarouselPage extends Component {
             <CarouselItem itemId="1">
               <View >
                 <img className="d-block w-100" src="http://www.backgroundimageshd.com/wp-content/uploads/2017/12/City-Full-HD-Wallpaper-1920x108023.jpg" alt="First slide" />
-                
+
               </View>
               <CarouselCaption>
                 <h3 className="h3-responsive">Light mask</h3>
@@ -96,10 +97,58 @@ export default class CarouselPage extends Component {
             <CarouselIndicator active={activeItem === 3 ? true : false} onClick={() => { this.goToIndex(3); }}></CarouselIndicator>
             <CarouselIndicator active={activeItem === 4 ? true : false} onClick={() => { this.goToIndex(4); }}></CarouselIndicator>
           </CarouselIndicators>
+       </Carousel>
 
-        </Carousel>
+       <div className="container">
+
+         <div className="row">
+
+           <div className="col">
+             <Card>
+                <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+                <CardBody>
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                 </CardBody>
+            </Card>
+            </div>
+
+            <div className="col">
+              <Card>
+                 <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+                 <CardBody>
+                 <CardTitle>Card title</CardTitle>
+                 <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  </CardBody>
+             </Card>
+             </div>
+
+             <div className="col">
+               <Card>
+                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+                  <CardBody>
+                  <CardTitle>Card title</CardTitle>
+                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                   </CardBody>
+              </Card>
+              </div>
+
+              <div className="col">
+                <Card>
+                   <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+                   <CardBody>
+                   <CardTitle>Card title</CardTitle>
+                   <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+
+                    </CardBody>
+               </Card>
+               </div>
+          </div>
+          </div>
+
        </div>
-      
+
+
     );
   }
 }
