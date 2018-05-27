@@ -3,6 +3,11 @@
   width:100%;
 }
 
+.card-container {
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
 @media only screen and (max-width: 768px) {
   .style {
       margin-top:12%;
