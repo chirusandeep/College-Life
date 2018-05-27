@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { Carousel, CarouselCaption, CarouselControl, CarouselInner, CarouselItem, CarouselIndicators, CarouselIndicator, View } from 'mdbreact';
-import { Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
+import { Container, Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
 import './carousel.css';
 
 export default class CarouselPage extends Component {
@@ -100,6 +100,8 @@ export default class CarouselPage extends Component {
           </CarouselIndicators>
         </Carousel>
 
+        <Container>
+          <h4 className="mt-5 mb-2">Basic example</h4>
         <div className="col-md-3">
 
           <Card>
@@ -149,8 +151,10 @@ export default class CarouselPage extends Component {
         </Card>
      
         </div >
+        </Container>
       </div >
       
+     
 
         
       
