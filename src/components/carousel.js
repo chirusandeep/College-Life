@@ -100,68 +100,46 @@ export default class CarouselPage extends Component {
           </CarouselIndicators>
         </Carousel>
 
-        <Container>
-          <h4 className="mt-5 mb-2">Basic example</h4>
+        <h4 className="mt-5 mb-2">Basic example</h4>
         <div className="row">
-        <div className="col-sm-3">
-          <Card>
-            <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
-            <CardBody>
-              <CardTitle>Card title</CardTitle>
-              <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            </CardBody>
-          </Card>
+          <div className="col">
+            <Card>
+              <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+              <CardBody>
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+              </CardBody>
+            </Card>
+          </div>
+          <div className="col">
+            <Card>
+              <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+              <CardBody>
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+              </CardBody>
+            </Card>
+          </div >
+          <div className="col">
+            <Card>
+              <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+              <CardBody>
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+              </CardBody>
+            </Card>
+          </div >
+          <div className="col">
+            <Card>
+              <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+              <CardBody>
+                <CardTitle>Card title</CardTitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+              </CardBody>
+            </Card>
+          </div >
         </div>
-     
-
-
-      <div className="col-sm-3">
-        <Card>
-          <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          </CardBody>
-        </Card>
-        </div >
-
-
-      <div className="col-sm-3">
-        <Card>
-          <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          </CardBody>
-        </Card>
-        </div >
-        <div className="col-sm-3">
-        <Card>
-          <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          </CardBody>
-        </Card>
-        </div >
-        </div>
-
-      <br/>
-      <div className="row">
-      <div className="col-md-3">
-        <Card>
-          <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-
-          </CardBody>
-        </Card>
-     
-        </div >
-        </div>
-        </Container>
-      </div >
+      </div>
     );
   }
 }
