@@ -4,14 +4,21 @@
 }
 
 .card-container {
-  margin-right: 1%;
-  margin-left: 1%;
+  margin-right: 2%;
+  margin-left: 2%;
+  
 }
-
+.cardsty{
+   padding-bottom: 7%;
+}
 @media only screen and (max-width: 768px) {
   .style {
       margin-top:12%;
   }
+  .card-container {
+  margin-right: 3%;
+  margin-left: 3%;
+}
   
 }
 
@@ -19,23 +26,37 @@
   .style {
       margin-top:0%;
   }
+  .card-container {
+  margin-right: 3%;
+  margin-left: 3%;
+}
   
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
   .style {
       margin-top:0%;
   }
-  
+  .card-container {
+  margin-right: 3%;
+  margin-left: 3%;
+}
 }
 @media (min-width: 481px) and (max-width: 767px){
   .style {
       margin-top:6%;
   }
-  
+  .card-container {
+  margin-right: 3%;
+  margin-left: 3%;
 }
-@media (min-width: 320px) and (max-width: 480px){
+}
+@media (min-width: 220px) and (max-width: 480px){
   .style {
       margin-top:12%;
   }
+  .card-container {
+  margin-right: 5%;
+  margin-left: 5%;
+}
   
 }

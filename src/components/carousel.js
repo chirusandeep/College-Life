@@ -99,49 +99,86 @@ export default class CarouselPage extends Component {
             <CarouselIndicator active={activeItem === 4 ? true : false} onClick={() => { this.goToIndex(4); }}></CarouselIndicator>
           </CarouselIndicators>
         </Carousel>
-
+        
         <div className="card-container">
-          <h4 className="mt-5 mb-2">Basic example</h4>
+        
+          <h4 className="mt-5 md-2">Departments</h4>
+       
           <div className="row">
-            <div className="col">
-              <Card>
-                <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
-                <CardBody>
-                  <CardTitle>Card title</CardTitle>
-                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                </CardBody>
-              </Card>
+            
+            
+              <div className="col-md-3">
+              <div className="cardsty">
+                <Card>
+                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+                  <div className="hoverable">
+                  <CardBody>
+                    <CardTitle>Computer Science</CardTitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  </CardBody>
+                  </div>
+                </Card>
+              </div>
             </div>
-            <div className="col">
-              <Card>
-                <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
-                <CardBody>
-                  <CardTitle>Card title</CardTitle>
-                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                </CardBody>
-              </Card>
-            </div >
-            <div className="col">
-              <Card>
-                <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
-                <CardBody>
-                  <CardTitle>Card title</CardTitle>
-                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                </CardBody>
-              </Card>
-            </div >
-            <div className="col">
-              <Card>
-                <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
-                <CardBody>
-                  <CardTitle>Card title</CardTitle>
-                  <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                </CardBody>
-              </Card>
-            </div >
+            
+              <div className="col-md-3">
+              <div className="cardsty">
+                <Card>
+                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+                  <div className="hoverable">
+                  <CardBody>
+                    <CardTitle>ECE</CardTitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  </CardBody>
+                  </div>
+                </Card>
+              </div >
+            </div>
+            
+              <div className="col-md-3">
+              <div className="cardsty">
+                <Card>
+                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+                  <div className="hoverable">
+                  <CardBody>
+                    <CardTitle>EEE</CardTitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  </CardBody>
+                  </div>
+                </Card>
+              </div >
+            </div>
+            
+              <div className="col-md-3">
+              <div className="cardsty">
+                <Card>
+                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+                 <div className="hoverable">
+                  <CardBody>
+                    <CardTitle>MECH</CardTitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  </CardBody>
+                  </div>
+                </Card>
+              </div >
+            </div>
+            <div className="col-md-3">
+              <div className="cardsty">
+                <Card>
+                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+                  <div className="hoverable">
+                  <CardBody>
+                    <CardTitle>Civil</CardTitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  </CardBody>
+                  </div>
+                </Card>
+              </div >
+            </div>
           </div>
         </div>
       </div>
+      
     );
   }
 }
